@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5d5f68</color>
+    <color name="colorMedium">#393939</color>
+    <color name="colorPrimaryDark">#222225</color>
+    <color name="colorAccent">#74768e</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorSelected">#000000</color>
+    <color name="colorUnselected">#f1dddd</color>
+    <color name="light_green">#b4d252</color>
+    <color name="purple">#ae9dc4</color>
+    <color name="scoreRed">#ed0c3d</color>
+    <color name="scoreYellow">#ece819</color>
+    <color name="scoreOrange">#fa6c00</color>
+    <color name="scoreGreen">#39d704</color>
+    <color name="whiteCream">#fbfaf8</color>
+    <color name="colorBlueDark">#416dc5</color>
+    <color name="colorCyan">#46c7d2</color>
+</resources>

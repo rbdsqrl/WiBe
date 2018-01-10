@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "956524913006",
+    "firebase_url": "https://wibe-d2337.firebaseio.com",
+    "project_id": "wibe-d2337",
+    "storage_bucket": "wibe-d2337.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956524913006:android:88459f815220f6a3",
+        "android_client_info": {
+          "package_name": "com.dovo.wibe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956524913006-1l6jpfi20134j73b40qc7i4db2l06ak1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dovo.wibe",
+            "certificate_hash": "d00e88c4245229910de189d75530b8493300a98c"
+          }
+        },
+        {
+          "client_id": "956524913006-4477vaao6tfc4sk68p1s41djeq87n35c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI-9pJsrNnelq5m715EVpgikDkuuEhwuY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956524913006-4477vaao6tfc4sk68p1s41djeq87n35c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

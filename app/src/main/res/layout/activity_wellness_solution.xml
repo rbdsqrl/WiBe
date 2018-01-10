@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:local="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMedium"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/toolbar_template"
+            local:popupTheme="@style/AppTheme.PopupOverlay"
+            local:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:id="@+id/rrMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivHome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:elevation="2dp"
+                    android:src="@drawable/body_scale_2" />
+
+                <ImageView
+                    android:id="@+id/ivTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ivHome"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/wellness_int" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_below="@id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rrScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <View
+                    android:id="@+id/scoreView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/score_bar" />
+
+                <ImageView
+                    android:id="@+id/ivMarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pointer_circle"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvScoreLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/ivMarker"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="4dp"
+                    android:text="Your Wellness Score"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/tvScoreLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="2dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorMedium"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrDP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rrScore"
+                android:layout_margin="15dp"
+                android:background="@drawable/template_cyan"
+                android:elevation="2dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvLabelDP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="YOUR DIET PLAN"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDietPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLabelDP"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="1200 Calorie High Fibre High Plant Protein"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrFP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rrDP"
+                android:layout_margin="15dp"
+                android:background="@drawable/template_light_green"
+                android:elevation="2dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvLabelFP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="YOUR FITNESS PLAN"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvFitnessPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLabelFP"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="30 minute low cardio \n mid intensity"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrYP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rrFP"
+                android:layout_margin="15dp"
+                android:background="@drawable/template_purple"
+                android:elevation="2dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvLabelYP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="YOUR YOGA PLAN"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvYogaPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLabelYP"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="15 minute\n power yoga"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrRetest"
+                android:onClick="retakeTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rrYP"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_selected"
+                android:elevation="2dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMachine"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="Machine"
+                    android:src="@drawable/body_scale_2" />
+
+                <TextView
+                    android:id="@+id/tvRetest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Review Test"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

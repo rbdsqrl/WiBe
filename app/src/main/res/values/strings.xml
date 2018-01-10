@@ -1,0 +1,78 @@
+<resources>
+    <string name="web_client_id">956524913006-4477vaao6tfc4sk68p1s41djeq87n35c.apps.googleusercontent.com</string>
+    <string name="app_name">Wellness App</string>
+    <string name="less4"><![CDATA[<4]]></string>
+    <string name="less18"><![CDATA[<18]]></string>
+
+    <string name="select">Select</string>
+    <string name="hr9to5">9-5</string>
+    <string name="hr10to6">Night Shift</string>
+    <string name="hr6to10">On Call</string>
+    <string name="hrNone">No regular hours</string>
+
+    <string name="role_manager">Delivery Manager</string>
+    <string name="role_sales">Sales</string>
+    <string name="role_developer">Developer</string>
+    <string name="role_cust_support">Customer Support</string>
+    <string name="role_support">System Support</string>
+    <string name="role_cxo">CXO executive</string>
+    <string name="role_director">VP/Director</string>
+
+    <string name="activity_medium">Some Exercise</string>
+    <string name="activity_high">Daily Exercise</string>
+    <string name="activity_low">Sedentary</string>
+    <string name="activity_fit">Highly Active</string>
+
+    <string name="wellness_desc">Step on to ‘Wiby’ Wellness Machine\nAnd Check Your Wellness Score</string>
+    <string name="power_ai">Powered by AI</string>
+    <string name="sign_up_text">Get Fully Personalized Wellness Solution\nTailored to your Specific Work-Life Situation\n\nSignup and Get Started Today
+</string>
+
+
+    <string-array name="array_work_hours">
+        <item>@string/select</item>
+        <item>@string/hr9to5</item>
+        <item>@string/hr10to6</item>
+        <item>@string/hr6to10</item>
+        <item>@string/hrNone</item>
+    </string-array>
+
+    <string-array name="array_work_role">
+        <item>@string/select</item>
+        <item>@string/role_sales</item>
+        <item>@string/role_cust_support</item>
+        <item>@string/role_developer</item>
+        <item>@string/role_manager</item>
+        <item>@string/role_support</item>
+        <item>@string/role_director</item>
+        <item>@string/role_cxo</item>
+    </string-array>
+
+    <string-array name="array_activity">
+        <item>@string/select</item>
+        <item>@string/activity_low</item>
+        <item>@string/activity_medium</item>
+        <item>@string/activity_high</item>
+        <item>@string/activity_fit</item>
+    </string-array>
+
+    <string-array name="array_child">
+        <item>@string/select</item>
+        <item>New Born</item>
+        <item>Toddler</item>
+        <item>In School</item>
+        <item>In College</item>
+        <item>Grown</item>
+        <item>Not Applicable</item>
+    </string-array>
+
+    <string-array name="array_employment">
+        <item>@string/select</item>
+        <item>IT Software/Services</item>
+        <item>Banking/Financial</item>
+        <item>Retail</item>
+        <item>Manufacturing</item>
+        <item>Other</item>
+        <item>Unemployed</item>
+    </string-array>
+</resources>

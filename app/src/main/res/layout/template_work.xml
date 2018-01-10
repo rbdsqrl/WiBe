@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rrParameters2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/office_time" />
+
+            <TextView
+                android:id="@+id/tvQ14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv14"
+                android:text="Work Role?" />
+
+            <LinearLayout
+                android:id="@+id/llQ14"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ14"
+                android:layout_below="@id/tvQ14"
+                android:layout_marginBottom="5dp">
+
+                <Spinner
+                    android:id="@+id/sWorkRole"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"></Spinner>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:id="@+id/tvQ15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv15"
+                android:text="Work Hours?" />
+
+            <LinearLayout
+                android:id="@+id/llQ15"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ15"
+                android:layout_below="@+id/tvQ15"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:id="@+id/sWorkHour"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"></Spinner>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/over_time" />
+
+            <TextView
+                android:id="@+id/tvQ16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv16"
+                android:text="Overtime in hours per week?"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llQ16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ16"
+                android:layout_below="@id/tvQ16"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnOT10"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickOTHour"
+                    android:padding="4dp"
+                    android:text="10"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnOT20"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickOTHour"
+                    android:padding="4dp"
+                    android:text="20"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnOT30"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickOTHour"
+                    android:padding="4dp"
+                    android:text="30"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnOT40"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickOTHour"
+                    android:padding="4dp"
+                    android:text="40"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnOTSometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickOTHour"
+                    android:padding="4dp"
+                    android:text="Rarely"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/meeting_hours" />
+
+            <TextView
+                android:id="@+id/tvQ17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv17"
+                android:text="Hours you spend in meetings per day?"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llQ17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ17"
+                android:layout_below="@id/tvQ17"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnMeet2"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMeetingHour"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnMeet4"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMeetingHour"
+                    android:padding="4dp"
+                    android:text="4"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnMeet6"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMeetingHour"
+                    android:padding="4dp"
+                    android:text="6"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnMeet8"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMeetingHour"
+                    android:padding="4dp"
+                    android:text="8+"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/work_travel" />
+
+            <TextView
+                android:id="@+id/tvQ18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv18"
+                android:text="Work travel?"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llQ18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ18"
+                android:layout_below="@id/tvQ18"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnTravelNone"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickWorkTravel"
+                    android:padding="4dp"
+                    android:text="NA"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnTravel25"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickWorkTravel"
+                    android:padding="4dp"
+                    android:text="25%"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnTravel50"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickWorkTravel"
+                    android:padding="4dp"
+                    android:text="50%"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnTravel75"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickWorkTravel"
+                    android:padding="4dp"
+                    android:text="75%"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnTravel100"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickWorkTravel"
+                    android:padding="4dp"
+                    android:text="100%"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

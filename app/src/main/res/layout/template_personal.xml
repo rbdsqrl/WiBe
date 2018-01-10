@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rrParameters2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/gender" />
+
+            <TextView
+                android:id="@+id/tvQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv4"
+                android:text="Your Gender?" />
+
+            <LinearLayout
+                android:id="@+id/llQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ4"
+                android:layout_below="@id/tvQ4"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnMale"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickGender"
+                    android:padding="4dp"
+                    android:text="Male"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnFemale"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickGender"
+                    android:padding="4dp"
+                    android:text="Female"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/age" />
+
+            <TextView
+                android:id="@+id/tvQ5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv5"
+                android:text="How Young Are You?" />
+
+            <LinearLayout
+                android:id="@+id/llQ5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ5"
+                android:layout_below="@+id/tvQ5"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnA20"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickAge"
+                    android:padding="4dp"
+                    android:text="20+"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnA30"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickAge"
+                    android:padding="4dp"
+                    android:text="30+"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnA40"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickAge"
+                    android:padding="4dp"
+                    android:text="40+"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnA50"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickAge"
+                    android:padding="4dp"
+                    android:text="50+"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnA60"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickAge"
+                    android:padding="4dp"
+                    android:text="60+"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/marital" />
+
+            <TextView
+                android:id="@+id/tvQ7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv7"
+                android:text="Marital Status?"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llQ7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ7"
+                android:layout_below="@id/tvQ7"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMarriage"
+                    android:padding="4dp"
+                    android:text="Single"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnMarried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMarriage"
+                    android:padding="4dp"
+                    android:text="Married"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnWidow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMarriage"
+                    android:padding="4dp"
+                    android:text="Widowed"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnDivorced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickMarriage"
+                    android:padding="4dp"
+                    android:text="Divorced"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/spouse_work" />
+
+            <TextView
+                android:id="@+id/tvQ8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv8"
+                android:text="Working spouse?"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llQ8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ8"
+                android:layout_below="@id/tvQ8"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/btnWorking"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickSpouseWork"
+                    android:padding="4dp"
+                    android:text="Yes"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnNotWorking"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickSpouseWork"
+                    android:padding="4dp"
+                    android:text="No"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnNotApplicable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:onClick="onClickSpouseWork"
+                    android:padding="4dp"
+                    android:text="Not Applicable"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/pignon" />
+
+            <TextView
+                android:id="@+id/tvQ6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv6"
+                android:text="How Young is Your Youngest Child?" />
+
+            <LinearLayout
+                android:id="@+id/llQ6"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvQ6"
+                android:layout_below="@id/tvQ6"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:id="@+id/sChildAge"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_normal"
+                    android:elevation="2dp"></Spinner>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
